@@ -147,7 +147,7 @@ Make sure you have your local machine ready with this tooling:
 - Test the app if the «Power Platform binding» is setup properly.
 
   > [!NOTE]
-  > It will not work yet – it will cause a Timeout! (because we need to bring the "binding" in the app by installing the PPL Power SDK)
+  > It will not work yet – it will cause a Timeout! (because we need to bring the "binding" in the app by installing the Power Platform *Power SDK* in the next step)
 
   ```bash
   pac code run
