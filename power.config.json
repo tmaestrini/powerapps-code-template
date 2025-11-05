@@ -1,0 +1,12 @@
+{
+  "appId": "",
+  "appDisplayName": "Sample App",
+  "description": null,
+  "environmentId": "9bd951e7-adf4-eb4f-83d5-547e9d33e911",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000/",
+  "connectionReferences": {},
+  "databaseReferences": {}
+}
