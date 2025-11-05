@@ -135,6 +135,10 @@ Make sure you have your local machine ready with this tooling:
 
 #### Power Apps Code (PAC) app
 
+- Connect to your Power Platform environment with PAC enabled.<br>
+  Do this by using the «Power Platform for VS Code» extension (via UI). Alternatively, you can also use the PAC CLI:<br>
+  `pac env select -env <URL of your environment>` (make sure you have an auth profile; otherwise create this first: `pac auth create`).
+
 - Initialize your project to «transform» it into a PAC app by using the `pac code init` command from the PAC CLI:
 
   > [!NOTE]
