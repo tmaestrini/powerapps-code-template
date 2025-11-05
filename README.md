@@ -2,7 +2,8 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules – all wrapped in a Power App (Code App)!
 
-See project information on Github <https://github.com/microsoft/PowerAppsCodeApps>.
+> [!NOTE]
+> See project information on Github <https://github.com/microsoft/PowerAppsCodeApps>.
 
 ## Additional information on React application
 
@@ -80,7 +81,7 @@ Code Apps must be enabled in all dedicated Power Platform environments. This can
 
 ![Enable Power Apps Code Apps](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/media/enable-code-apps.png)
 
-> [!NOTE]
+> [!IMPORTANT]
 > End-users that run code apps need a Power Apps Premium license.
 
 ### ⓶ Install dev tools locally (local device)
