@@ -102,7 +102,7 @@ Make sure you have your local machine ready with this tooling:
   npm i --save-dev @types/node
   ```
 
-- As the Power SDK requires the port `3000` in the default configuration, make sure to adjust `vite.config.ts`:
+- As the Power Apps SDK (will be introduced in step ⓸) requires the port `3000` in the default configuration, make sure to adjust `vite.config.ts`:
 
   ```typescript
   import { defineConfig } from 'vite'
@@ -142,7 +142,7 @@ Make sure you have your local machine ready with this tooling:
 - Initialize your project to «transform» it into a PAC app by using the `pac code init` command from the PAC CLI:
 
   > [!NOTE]
-  > Notice that after this action, there's a new file in your project: `power.config.json`.
+  > Notice that after this action, there's a new file in your project: `power.config.json` which contains this metadata for Power Platform connections and to publish an app to an environment.
 
   ```bash
   pac code init --displayName "PAC Sample"
@@ -151,7 +151,7 @@ Make sure you have your local machine ready with this tooling:
 - Test the app if the «Power Platform binding» is setup properly.
 
   > [!NOTE]
-  > It will not work yet – it will cause a Timeout! (because we need to bring the "binding" in the app by installing the Power Platform *Power SDK* in the next step)
+  > It will not work yet – it will cause a Timeout! (because we need to bring the "binding" in the app by installing the Power Platform *Power Apps SDK* in the next step)
 
   ```bash
   pac code run
@@ -164,11 +164,13 @@ Make sure you have your local machine ready with this tooling:
 
 #### Adjust the app
 
-- Install the *Power SDK*. The *Power SDK* brings all the Power Platform capabilities to your code in order to make the Power Platform ressources accessible (most of all necessary for data connections or data connectors):
+- Install the *Power Apps SDK* through the [`@microsoft/power-apps` npm package](https://www.npmjs.com/package/@microsoft/power-apps). The *Power Apps SDK* brings all the Power Platform capabilities to your code in order to make the Power Platform ressources accessible (most of all necessary for data connections or data connectors) and to manage the depending data models:
 
   ```bash
   npm install --save-dev "@microsoft/power-apps"
   ```
+
+  👉 The Power Apps SDK exposes APIs that your code can use and the generated models and services your app uses to perform data requests via Power Platform connectors.
 
 - Create the `PowerProvider.tsx` component. Add a new React component within the `src` folder named `PowerProvider.tsx`. <br>
   Grab the code from  <https://github.com/microsoft/PowerAppsCodeApps/blob/main/docs/assets/PowerProvider.tsx>.<br>
