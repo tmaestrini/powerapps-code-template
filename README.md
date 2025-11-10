@@ -164,13 +164,11 @@ Make sure you have your local machine ready with this tooling:
 
 #### Adjust the app
 
-- Install the *Power Apps SDK* through the [`@microsoft/power-apps` npm package](https://www.npmjs.com/package/@microsoft/power-apps). The *Power Apps SDK* brings all the Power Platform capabilities to your code in order to make the Power Platform ressources accessible (most of all necessary for data connections or data connectors) and to manage the depending data models:
+- Install the *Power Apps SDK* through the [`@microsoft/power-apps` npm package](https://www.npmjs.com/package/@microsoft/power-apps). The *Power Apps SDK* brings all the Power Platform capabilities to your code in order to make the Power Platform ressources accessible (most of all necessary for data connections or data connectors) and to manage the depending data models by exposing according APIs:
 
   ```bash
   npm install --save-dev "@microsoft/power-apps"
   ```
-
-  👉 The Power Apps SDK exposes APIs that your code can use and the generated models and services your app uses to perform data requests via Power Platform connectors.
 
 - Create the `PowerProvider.tsx` component. Add a new React component within the `src` folder named `PowerProvider.tsx`. <br>
   Grab the code from  <https://github.com/microsoft/PowerAppsCodeApps/blob/main/docs/assets/PowerProvider.tsx>.<br>
