@@ -93,7 +93,7 @@ Make sure you have your local machine ready with this tooling:
 - **Power Platform Tools for VS Code (including PAC CLI)***: 👉 https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction
 
 > [!WARNING]
-> **Users running the «Power Platform Tools for VS Code» extension will receive an error warning referring to Node.js when trying to add a data source to the project and using the PAC CLI.** This bug is related to an erroneous node package used in the PAC CLI that comes with the VS Code extension.<br>
+> **Users running the «Power Platform Tools for VS Code» extension on Mac OS will receive an error warning referring to Node.js when trying to add a data source to the project and using the PAC CLI.** This bug is related to an erroneous node package used in the PAC CLI that comes with the VS Code extension.<br>
 > To resolve this as a workaround, follow this guidelines: <https://gist.github.com/tmaestrini/5eb492c74dee91890df463adbd18e8fb>.
 
 
